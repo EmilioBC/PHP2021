@@ -29,6 +29,11 @@
 
 ///////// CHALLENGE WHO ATE ALL THE PI //////////////////////
 
-$radius = 5;
-$areaOfCircle = (pi() * pow($radius, 2));
-echo "Area of a cricle is: " . round($areaOfCircle, 2) . " sq in";
+// $radius = 5;
+// $areaOfCircle = (pi() * pow($radius, 2));
+// echo "Area of a cricle is: " . round($areaOfCircle, 2) . " sq in";
+
+
+/////////////// DATES /////////////////////////
+
+date_default_timezone_set("Europe/London");
