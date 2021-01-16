@@ -3,12 +3,12 @@
 
 //////// IF Statements //////////////
 
-$a = 5;
+$a = 20;
 
-$b = 6;
-
-if ($a > $b) {
+if ($a % 400 == 0) {
   echo "true";
-} else {
+} elseif ($a % 100 == 0) {
   echo "false";
+} else {
+  echo "true";
 }
