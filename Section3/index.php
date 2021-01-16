@@ -38,15 +38,11 @@
 
 //// Area of Circle//////////
 
-// $pie = 3.15;
-
-// $radBase = 5;
-// $radPow = 2;
-// $radius = pow($radBase, $radPow);
+// $radius = 5;
 // echo "Radius of 5 raise to the power of 2 is: " . $radius;
 // echo "<br>";
-// $areaOfCircle = ($pie * $radius) * 25;
-// echo "Area of a cricle is: " . $areaOfCircle . " sq in";
+// $areaOfCircle = (pi() * pow($radius, 2));
+// echo "Area of a cricle is: " . round($areaOfCircle, 2) . " sq in";
 
 
 ////////// Area of Trapezium /////////////
