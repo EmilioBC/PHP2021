@@ -51,29 +51,53 @@
 /////////// Dates CHALLENGE ////////////////////
 
 
+// date_default_timezone_set("Europe/London");
+
+// echo "CARPE DIEM Challenge";
+// echo "<br>";
+// echo "<br>";
+// echo date("l jS F Y");
+// echo "<br>";
+// echo "echo date('l jS F Y')";
+// echo "<br>";
+// echo "<br>";
+// echo "Today is " . date("l");
+// echo "<br>";
+// echo "<br>";
+// echo date("l jS F Y");
+// echo "<br>";
+// echo "<br>";
+// echo date("Y/ m/ d");
+// echo str_repeat('&nbsp;', 50);
+// echo ("(Year/Month/Day)");
+// echo "<br>";
+// echo "<br>";
+// echo date("l jS F Y, g:i A");
+// echo "<br>";
+// echo "<br>";
+// //// Leap Year /////
+// if (date("L") == 1) {
+//   echo date("Y") . " is a Leap Year.";
+// } else {
+//   echo date("Y") . " Not a Leap Year.";
+// }
+
+
+///////////////// TIME /////////////////////////
+
+// $date = strtotime("next christmas");
+
+// $days = ($date - time()) / 60 / 60 / 24;
+
+// echo ceil($days);
+
+
+////////// SANTA COUNT DOWN //////////////////
+
 date_default_timezone_set("Europe/London");
 
-echo "CARPE DIEM Challenge";
-echo "<br>";
-echo "<br>";
-echo date("l jS F Y");
-echo "<br>";
-echo "echo date('l jS F Y')";
-echo "<br>";
-echo "<br>";
-echo "Today is " . date("l");
-echo "<br>";
-echo "<br>";
-echo date("l jS F Y");
-echo "<br>";
-echo "<br>";
-echo date("Y/ m/ d");
-echo str_repeat('&nbsp;', 50);
-echo ("(Year/Month/Day)");
-echo "<br>";
-echo "<br>";
-echo date("l jS F Y, g:i A");
-echo "<br>";
-echo "<br>";
-echo date("Y");
-echo date("L");
+$givenDate = strtotime("December 25");
+$time = time();
+$days = ceil(($givenDate - $time) / 60 / 60 / 24);
+
+echo ($days) . " Days till Santa Claus arrive.";
