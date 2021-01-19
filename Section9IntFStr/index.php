@@ -7,14 +7,15 @@ if (isset($_POST['count'])) {
 
 
   if ($spaces == "noSpace") {
-    ctype_graph($textBox);
+    $lettercount = strlen(str_replace(' ', '', $textBox));
+    echo $textBox . ' contains ' . $lettercount . ' letters only and no spaces.';
   } else {
-    strlen($textBox);
+    echo $textBox . " contains " . strlen($textBox) . " characters long including spaces.";
+    echo "<br>";
   }
-
-  echo "The string is " . $spaces . " characters long.";
-  echo "<br>";
 }
+echo "<br>";
+
 ?>
 
 <form action="index.php" method="POST">
@@ -22,4 +23,4 @@ if (isset($_POST['count'])) {
   Count spaces<input type="radio" name="spaces" value="yesSpace">;
   Don't Count spaces<input type="radio" name="spaces" value="noSpace">;
   <input type="submit" name="count" value="count">;
-</form>
+</form> -->
