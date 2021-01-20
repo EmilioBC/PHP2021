@@ -27,6 +27,33 @@ if (isset($_POST['count'])) {
 }
 echo "<br>";
 
+$string = "John|Sam|Billy|Karen|Ben|Jane|Bob";
+echo $string;
+echo "<br>";
+$newString = str_replace('|', ', ', $string);
+
+echo $newString;
+
+echo "<br>";
+
+$string = "basketball";
+
+$newString = str_shuffle($string);
+
+echo $newString;
+
+echo "<br>";
+
+////////////////// MISSION IMPOSSIBLE CHALLENGE ///////////
+
+$string = "Rafher gung lbh orpbzr snzvyvne jvgu cuc shapgvbaf nf gurl ner rkgerzryl hfrshy.
+";
+
+$newString = str_rot13("Rafher gung lbh orpbzr snzvyvne jvgu cuc shapgvbaf nf gurl ner rkgerzryl hfrshy.
+");
+
+echo $newString;
+
 ?>
 
 <form action="index.php" method="POST">
