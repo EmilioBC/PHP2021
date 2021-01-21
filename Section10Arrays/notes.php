@@ -45,7 +45,7 @@ print_r($letters);
 
 
 
-echo "______________ISBN CHECKER ____________________";
+echo "______________CHALLENGE ISBN CHECKER ____________________";
 
 if (isset($_POST["submit"])) {
 
