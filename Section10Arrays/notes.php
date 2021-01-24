@@ -173,3 +173,21 @@ print_r($cities);
 array_unshift($cities, "Manila");
 
 print_r($cities);
+
+
+
+echo " -------------- AOUND THE WORLD CHALLENGE -------------------";
+
+$cities = array("Paris", "New York", "Amsterdam", "Berlin", "London", "Brisabane");
+
+echo "<pre>";
+echo "List of city arrays";
+print_r($cities);
+
+sort($cities);
+print_r($cities);
+
+array_push($cities, "Sydney", "Helsink", "Beijing", "Dublin", "Rome");
+
+sort($cities);
+print_r($cities);
