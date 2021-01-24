@@ -121,3 +121,18 @@ echo "<br>";
   Text box<input type="text" name="textBox">
   <input type="submit" name="submit" value="submit">
 </form>
+
+
+echo "---------------- SORT ------------"
+
+$names = array("Jay", "Beth", "RJ", "Liam");
+
+rsort(($names));
+
+echo "<ol>";
+
+  foreach ($names as $name) {
+  echo "<li>" . $name . "</li>";
+  }
+
+  echo "</ol>";
