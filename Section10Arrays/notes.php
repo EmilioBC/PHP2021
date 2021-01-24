@@ -136,3 +136,40 @@ echo "<ol>";
   }
 
   echo "</ol>";
+
+
+
+echo "---------------- EXPLODE AND IMPLODE ------------------"
+
+$string = "John, Sarah, Ken, Bart, Amy";
+
+$names = explode(", ", $string);
+
+echo "
+<pre>";
+print_r($names);
+
+$imploded = implode("|", $names);
+
+echo $imploded;
+
+
+
+echo "------------------------- INSERT ARRAYS --------------------"
+
+$cities = ["London", "Paris"];
+
+echo "<pre>";
+print_r($cities);
+
+array_push($cities, "New York", "Berlin");
+
+print_r($cities);
+
+array_unshift($cities, "Amsterdam", "Dublin");
+
+print_r($cities);
+
+array_unshift($cities, "Manila");
+
+print_r($cities);
