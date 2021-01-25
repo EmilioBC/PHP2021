@@ -258,23 +258,22 @@ $t = [
 
 $sum = array_sum($t);
 
-$count = count($t);
+$number = count($t);
 
-$average = $sum / $count;
+$average = $sum / $number;
 
-echo "The average daily temperature is - " . round($average, 1) . "℃";
+echo "The average temperature is " . round($average, 1) .  "℃";
 echo "<br>";
 
 sort($t);
 
-$lowest = array_slice($t, 0, 5);
-
+$lowest = array_splice($t, 0, 5);
 $lowest = implode("℃, ", $lowest);
 
-$highest = array_slice($t, -5, 5);
+echo "The 5 lowest temperature are " . $lowest . "℃";
+echo "<br>";
 
+$highest = array_splice($t, -5, 5);
 $highest = implode("℃, ", $highest);
 
-echo "The top 5 LOWEST temperatures are - " . $lowest;
-echo "<br>";
-echo "The top 5 HIGHEST temperatures are - " . $highest;
+echo "The 5 highest temperature are " . $highest .  "℃";
