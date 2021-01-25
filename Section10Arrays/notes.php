@@ -277,3 +277,13 @@ $highest = array_splice($t, -5, 5);
 $highest = implode("℃, ", $highest);
 
 echo "The 5 highest temperature are " . $highest .  "℃";
+
+
+
+echo " ------------------- RANDOM -----------------------"
+
+$cities = ["London", "Paris", "New York", "Dublin", "Berlin"];
+
+$city = array_rand($cities);
+
+echo $cities[$city];
