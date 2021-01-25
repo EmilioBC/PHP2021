@@ -287,3 +287,17 @@ $cities = ["London", "Paris", "New York", "Dublin", "Berlin"];
 $city = array_rand($cities);
 
 echo $cities[$city];
+
+
+echo " --------------------- CHALLENGE Random Cards --------------------"
+
+$suits = ["clubs", "diamonds", "hearts", "spades"];
+
+$randomSuits = array_rand($suits);
+
+$cards = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queem", "King"];
+
+$randomCard = array_rand($cards);
+
+
+echo "Your card is " . $cards[$randomCard] . " " . $suits[$randomSuits];
