@@ -201,3 +201,47 @@ foreach ($cities as $city) {
 
 
 echo "</ol>";
+
+
+
+echo "---------------Remove First and Last Elements-----------------"
+
+echo "<pre>";
+
+$cities = ["London", "New York", "Amsterdam", "Dublin"];
+print_r($cities);
+echo "<br>";
+
+$lastCity = array_pop($cities);
+echo "The last city is " . $lastCity;
+
+echo "<br>";
+echo "<br>";
+print_r($cities);
+
+$firstCity = array_shift($cities);
+echo "The first city is " . $firstCity;
+
+echo "<br>";
+echo "<br>";
+print_r($cities);
+
+
+
+echo " ---------------- SLICE -----------------------------------"
+
+echo "<pre>";
+
+$letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "o", "p", "q"];
+
+$result = array_slice($letters, 5);
+
+print_r($result);
+
+$result = array_slice($letters, 0, 5);
+
+print_r($result);
+
+$result = array_slice($letters, -5, 5);
+
+print_r($result);
