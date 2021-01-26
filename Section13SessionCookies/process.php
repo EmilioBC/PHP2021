@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
   $myAge = $_POST['myAge'];
   $myColour = $_POST['myColour'];
 
-  setcookie('Name', $myName);
-  setcookie('Age', $myAge);
-  setcookie('Colour', $myColour);
+  setcookie('Name', $myName, time() + 600);
+  setcookie('Age', $myAge, time() + 600);
+  setcookie('Colour', $myColour, time() + 600);
 }
