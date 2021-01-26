@@ -11,6 +11,8 @@ $cities = [
   "Poland" => "Warsaw"
 ];
 
+asort($cities);
+
 foreach ($cities as $country => $city) {
   echo "The capital city of " . $country . " is " . $city;
   echo "<br>";
