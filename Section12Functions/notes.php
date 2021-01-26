@@ -22,3 +22,18 @@ echo $sum;
 
 $c = 3;
 add();
+
+
+echo "-------------- ARGUMENTS ----------------------------------";
+
+function multiply($num1, $num2)
+{
+$result = $num1 * $num2;
+echo $result;
+}
+
+multiply(3, 2);
+
+echo "<br>";
+
+multiply(5, 5);
